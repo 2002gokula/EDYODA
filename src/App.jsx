@@ -7,7 +7,13 @@ const Hero = lazy(() => import("./component/Hero"))
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex items-center justify-center h-screen my-auto mx-auto ">
+            <img src="/Images/EDYODA.svg" alt="" />
+          </div>
+        }
+      >
         <Header />
         <Hero />
       </Suspense>
