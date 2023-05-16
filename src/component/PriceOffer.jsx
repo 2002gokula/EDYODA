@@ -73,6 +73,7 @@ const PriceOffer = () => {
             <div className="flex items-center">
               <div class="inputGroup ">
                 <input
+                  disabled={true}
                   id="option1"
                   checked={
                     value.Offerexpired ? isDisabled : planSelection === index
